@@ -3,21 +3,20 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: "Helvetica Neue",Helvetica,Arial;
+body {
+    font-family: 'Muli', sans-serif;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    overflow: visible;
+    overflow: hidden;
     margin: 0;
-}
-
-.container {
+  }
+  
+  .container {
     display: flex;
-    width: 80vw;
-}
+    width: 90vw;
+  }
 
 .panel {
     background-size: auto 100%;
@@ -43,7 +42,7 @@ body{
 }
 
 .panel.active {
-    flex: 3;
+    flex: 5;
 }
 
 .panel.active h3 {
@@ -51,13 +50,13 @@ body{
     transition: opacity 0.4s ease-in 0.6s;
 }
 
-@media (max-width: 480px){
+@media (max-width: 580px){
     .container{
-        width: 100%;
+        width: 90%;
     }
     .panel:nth-of-type(4),
     .panel:nth-of-type(5){
-        display: none;
+        display:none;
     }
 }
 
